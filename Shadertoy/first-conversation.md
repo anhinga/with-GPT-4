@@ -35,6 +35,7 @@ GPT-4:
 Below, I provide three variations of the original shader, changing the functions used, input parameters, and color components. Feel free to combine or mix these ideas to create even more unique visual effects.
 
 **Variation 1: Different trigonometric functions**
+
 In this variation, I replaced the sin() function with the cos() function to create a different pattern.
 
 ```glsl
@@ -57,6 +58,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
 ```
 
 **Variation 2: Modify input parameters**
+
 Here, I changed the input parameters to the sin() function to create a different pattern:
 
 ```glsl
@@ -79,6 +81,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
 ```
 
 **Variation 3: Change color components**
+
 In this variation, I swapped the color components for a different visual effect:
 
 ```glsl
