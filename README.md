@@ -1,4 +1,4 @@
-# with-GPT-4
+# With GPT 4
 
 I am exploring GPT-4 in recent weeks, and my collaboration with GPT-4 started to generate working code in recent days.
 
