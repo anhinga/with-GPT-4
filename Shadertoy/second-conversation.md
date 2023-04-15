@@ -2,6 +2,7 @@ ME:
 
 I'd like to understand how this shader works:
 
+```
 float fract_sin_dot (vec2 uv) {
         return fract(sin(dot(
                          // uv.xy,
@@ -21,6 +22,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 
     fragColor = vec4(color,1.0);
 }
+```
 
 GPT-4:
 
