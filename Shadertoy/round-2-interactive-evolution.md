@@ -13,6 +13,12 @@ https://www.shadertoy.com/view/mdVXDK
 
 https://www.shadertoy.com/view/msVXDK
 
+Also (per GPT-4 suggestion, as well as my own guess) it makes sense to combine versions 1 and 2, and versions 3 and 2:
+
+https://www.shadertoy.com/view/ddVSWV
+
+https://www.shadertoy.com/view/mdVSWV
+
 ME:
 
 I'd like to try to modify the following shader in various interesting ways:
