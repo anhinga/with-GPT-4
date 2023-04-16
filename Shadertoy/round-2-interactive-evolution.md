@@ -5,7 +5,13 @@ Note that it did the section numbering incorrectly (although who cares), and tha
 one function at a time, while in the "round 1" it was modifying both functions in the shader.
 
 The mod number 4 is not interesting (somehow, I don't see any visual change, despite the color inversion),
-but the other 3 are cool.
+but the other 3 are cool:
+
+https://www.shadertoy.com/view/ddVXDK
+
+https://www.shadertoy.com/view/mdVXDK
+
+https://www.shadertoy.com/view/msVXDK
 
 ME:
 
