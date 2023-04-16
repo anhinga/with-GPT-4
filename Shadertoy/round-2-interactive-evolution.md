@@ -98,4 +98,10 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
 
 Feel free to mix and match these modifications to create new patterns and color combinations!
 
+ME:
 
+I love the results, thanks!
+
+GPT-4: 
+
+ERROR MESSAGE: Something went wrong. If this issue persists please contact us through our help center at help.openai.com.
