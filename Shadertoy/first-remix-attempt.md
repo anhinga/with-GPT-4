@@ -5,7 +5,7 @@ The explanation, unfortunately, did not clarify much (I still don't know how tha
 but the remix was fine (although it lost the interactive elements from my shader (NO, I AM WRONG HERE, IT IS INTERACTIVE), and it has too much white,
 but it does look like a genuine remix): https://www.shadertoy.com/view/DdyXWt
 
-So, I asked it to fix the (incorrectly perceived by me) lack of interativity and to fix the too much white, and it produced an awesome shader: 
+So, I asked it to fix the (incorrectly perceived by me) lack of interativity and to fix the too much white, and it produced an awesome shader: https://www.shadertoy.com/view/cdySDt
 
 ME:
 
