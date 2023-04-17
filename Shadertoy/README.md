@@ -11,3 +11,7 @@ I think the last shader it produced (version 3 + version 2 combination) is the m
 Round 3 of interactive evolution produced rotation, but generally speaking I was unhappy with its creative input.
 
 I should probably backtrack and either try to ask it to remix two shaders, or to introduce particular motifs in a more specific way.
+
+Then I've asked GPT-4 to do a remix with a shader by Danilo Guanabara and then asked GPT-4 to fix and improve that remix
+(see [first-remix-attempt.md](first-remix-attempt.md)) resulting in a rather brilliant
+shader: https://www.shadertoy.com/view/cdySDt
