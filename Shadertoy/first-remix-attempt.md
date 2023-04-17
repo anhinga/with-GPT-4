@@ -3,7 +3,7 @@ and then to remix it with my shader https://www.shadertoy.com/view/mdVSWV
 
 The explanation, unfortunately, did not clarify much (I still don't know how that first shader works), 
 but the remix was fine (although it lost the interactive elements from my shader, and it has too much white,
-but it does look like a genuine remix):
+but it does look like a genuine remix): https://www.shadertoy.com/view/DdyXWt
 
 ME:
 
