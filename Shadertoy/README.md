@@ -16,4 +16,5 @@ Then I've asked GPT-4 to do a remix with a shader by Danilo Guanabara and then a
 (see [first-remix-attempt.md](first-remix-attempt.md)) resulting in a rather brilliant
 shader: https://www.shadertoy.com/view/cdySDt
 
-I ended up manually fixing interactivity in that shader to a more desirable version: https://www.shadertoy.com/view/csySDt
+I ended up manually fixing interactivity in that shader to a more desirable version (and upon further reflection I slowed it
+down 4-fold to make it similar in speed to my shaders; it has been way too fast for my taste): https://www.shadertoy.com/view/csySDt
