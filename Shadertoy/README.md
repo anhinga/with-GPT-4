@@ -18,3 +18,4 @@ shader: https://www.shadertoy.com/view/cdySDt
 
 I ended up manually fixing interactivity in that shader to a more desirable version (and upon further reflection I slowed it
 down 4-fold to make it similar in speed to my shaders; it has been way too fast for my taste): https://www.shadertoy.com/view/csySDt
+(the source code of this shader is also here: [modified-remix.glsl](modified-remix.glsl))
