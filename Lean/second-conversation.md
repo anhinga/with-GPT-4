@@ -55,3 +55,25 @@ notation x `<<` y := way_below x y
 Now, you can work with continuous dcpo structures in Lean and prove theorems about them.
 
 Remember that this is a basic setup. To leverage Lean's power fully, you may need to create more instances, define additional lemmas, and adjust the structure according to your specific requirements.
+
+NOTE: The way-below relation does not look correct.
+
+ME:
+
+Thanks! I think we need to update the definition of the way-below relation in Lean. This is how this definition looks like in LaTeX: Consider a dcpo $(A, \sqsubseteq)$ and $x, y \in A$.
+We say that $x \ll y$ ($x$ is {\em way
+below} $y$) if for any directed set $S \subseteq A$,
+$y \sqsubseteq \sqcup S \Rightarrow \exists s\in S.
+\ x \sqsubseteq s$. 
+
+GPT-4:
+
+Thank you for providing the updated definition for the way-below relation. Based on your provided definition, we can update the way-below relation definition in Lean as follows:
+
+```lean
+def way_below {α : Type*} [preorder α] [complete_lattice α] (x y : α) : Prop :=
+  ∀ S : set α, directed_on (≤) S → y ≤ Sup S → ∃ s ∈ S, x ≤ s
+```
+
+This definition now matches the provided definition in LaTeX. Note that we've added the `[complete_lattice α]` constraint to ensure the existence of the supremum (`Sup`) operation.
+
