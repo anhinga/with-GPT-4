@@ -33,3 +33,10 @@ def is_alexandrov_open {A : Type*} [complete_lattice A] (B : set A) : Prop :=
   ∀ x : A, ∀ y : A , x ∈ B → x ≤ y → y ∈ B
 ```
 
+Actually, this is better:
+
+```lean
+def is_alexandrov_open {A : Type*} [complete_lattice A] (B : set A) : Prop :=
+  ∀ (x y : A), x ∈ B → x ≤ y → y ∈ B
+```
+
