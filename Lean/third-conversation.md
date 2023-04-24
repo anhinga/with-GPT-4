@@ -71,7 +71,7 @@ and the first unpleasant non-sense is that it does not seem to understand subtyp
 complains about `is_alexandrov_open B`, and if I do the following as a cludge
 
 ```lean
-def is_alexandrov_open {A : Type*} [complete_lattice A] (B : set A) : Prop :=
+def is_alexandrov_open {A : Type*} [continuous_lattice A] (B : set A) : Prop :=
   ∀ (x y : A), x ∈ B → x ≤ y → y ∈ B
 ```
 
