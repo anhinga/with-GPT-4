@@ -40,3 +40,41 @@ def is_alexandrov_open {A : Type*} [complete_lattice A] (B : set A) : Prop :=
   ∀ (x y : A), x ∈ B → x ≤ y → y ∈ B
 ```
 
+OK, so now I tentatively have
+
+```lean
+import order.complete_lattice
+import order.directed
+
+def way_below {α : Type*} [preorder α] [complete_lattice α] (x y : α) : Prop :=
+  ∀ S : set α, directed_on (≤) S → y ≤ Sup S → ∃ s ∈ S, x ≤ s
+
+structure continuous_lattice (α : Type*) extends complete_lattice α :=
+(continuous : ∀ x : α, x = ⨆ (y : α) (h : way_below y x), y)
+
+notation x `<<` y := way_below x y
+
+def is_alexandrov_open {A : Type*} [complete_lattice A] (B : set A) : Prop :=
+  ∀ (x y : A), x ∈ B → x ≤ y → y ∈ B
+
+lemma border_lemma {A : Type*} [continuous_lattice A] (B : set A) 
+  (hB : is_alexandrov_open B) :
+  let Scott_interior := {y ∈ A | ∃ x ∈ B, x `<<` y} in
+  let Scott_border := {y ∈ B | ¬(∃ x ∈ B, x `<<` y)} in
+  interior B = Scott_interior ∧ B \ interior B = Scott_border :=
+begin
+  -- The proof will go here.
+end
+```
+
+and the first unpleasant non-sense is that it does not seem to understand subtyping,
+complains about `is_alexandrov_open B`, and if I do the following as a cludge
+
+```lean
+def is_alexandrov_open {A : Type*} [complete_lattice A] (B : set A) : Prop :=
+  ∀ (x y : A), x ∈ B → x ≤ y → y ∈ B
+```
+
+then it does not understand `≤` in this definition. So, perhaps, this
+`structure` ... `extends` does not do what I want. (Then, of course,
+my syntax in the definitions of a set is incorrect.)
