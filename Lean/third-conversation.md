@@ -78,3 +78,11 @@ def is_alexandrov_open {A : Type*} [continuous_lattice A] (B : set A) : Prop :=
 then it does not understand `≤` in this definition. So, perhaps, this
 `structure` ... `extends` does not do what I want. (Then, of course,
 my syntax in the definitions of a set is incorrect.)
+
+Yes, it should be `class` ... `extends`, not `structure`:
+
+```lean
+class continuous_lattice (α : Type*) extends complete_lattice α :=
+(continuous : ∀ x : α, x = ⨆ (y : α) (h : way_below y x), y)
+```
+
