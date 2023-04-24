@@ -86,3 +86,46 @@ class continuous_lattice (α : Type*) extends complete_lattice α :=
 (continuous : ∀ x : α, x = ⨆ (y : α) (h : way_below y x), y)
 ```
 
+It's absolutely weird the following particular changes are needed in the `let` lines of the Lemma for Lean to stop complaining
+about them:
+
+```lean
+lemma border_lemma {A : Type*} [continuous_lattice A] (B : set A) 
+  (hB : is_alexandrov_open B) :
+  let Scott_interior := {y : A | ∃ x ∈ B, way_below x y} in
+  let Scott_border := {y ∈ B | ¬(∃ x ∈ B, way_below x y)} in
+  interior B = Scott_interior ∧ B \ interior B = Scott_border :=
+begin
+  -- The proof will go here.
+end
+```
+
+But, of course, it still complains about `interior` (all the topology stuff is missing so far and
+needs to be included).
+
+The current snapshot is
+
+```lean
+import order.complete_lattice
+import order.directed
+
+def way_below {α : Type*} [preorder α] [complete_lattice α] (x y : α) : Prop :=
+  ∀ S : set α, directed_on (≤) S → y ≤ Sup S → ∃ s ∈ S, x ≤ s
+
+class continuous_lattice (α : Type*) extends complete_lattice α :=
+(continuous : ∀ x : α, x = ⨆ (y : α) (h : way_below y x), y)
+
+notation x `<<` y := way_below x y
+
+def is_alexandrov_open {A : Type*} [complete_lattice A] (B : set A) : Prop :=
+  ∀ (x y : A), x ∈ B → x ≤ y → y ∈ B
+
+lemma border_lemma {A : Type*} [continuous_lattice A] (B : set A) 
+  (hB : is_alexandrov_open B) :
+  let Scott_interior := {y : A | ∃ x ∈ B, way_below x y} in
+  let Scott_border := {y ∈ B | ¬(∃ x ∈ B, way_below x y)} in
+  interior B = Scott_interior ∧ B \ interior B = Scott_border :=
+begin
+  -- The proof will go here.
+end
+```
