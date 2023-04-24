@@ -77,3 +77,23 @@ def way_below {α : Type*} [preorder α] [complete_lattice α] (x y : α) : Prop
 
 This definition now matches the provided definition in LaTeX. Note that we've added the `[complete_lattice α]` constraint to ensure the existence of the supremum (`Sup`) operation.
 
+NOTE:
+
+There are two problems here. `complete_lattice` is too strong a condition for what I am trying to do. But I'll disregard
+this and just do it for a `complete_lattice` and not for a `dcpo` for the time being.
+
+Another problem, as Lean correctly notes is that in
+
+```lean
+structure continuous_dcpo (α : Type*) extends partial_order α, complete_lattice α :=
+(continuous : ∀ x : α, x = ⨆ (y : α) (h : way_below y x), y)
+```
+
+`complete_lattice` is referenced twice (once via `partial_order` and once explicitly.
+
+So this needs to be replaced by
+
+```lean
+structure continuous_dcpo (α : Type*) extends complete_lattice α :=
+(continuous : ∀ x : α, x = ⨆ (y : α) (h : way_below y x), y)
+```
