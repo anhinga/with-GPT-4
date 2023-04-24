@@ -129,3 +129,10 @@ begin
   -- The proof will go here.
 end
 ```
+
+Here is what needs to be added:
+  * define Scott topology
+  * prove that for any `x` in a suitable domain, `{y | way_below x y}` is open in that topology
+  * that should allow to establish that `{y : A | ∃ x ∈ B, way_below x y}` is indeed a subset of the `interior B` in that topology
+  * then separately establish that `¬(∃ x ∈ B, way_below x y)` implies that `y` is not in the `interior B`
+
