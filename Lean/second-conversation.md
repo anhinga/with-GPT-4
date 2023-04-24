@@ -105,3 +105,19 @@ structure continuous_lattice (α : Type*) extends complete_lattice α :=
 (continuous : ∀ x : α, x = ⨆ (y : α) (h : way_below y x), y)
 ```
 
+So, the current snippet of Lean code looks as follows:
+
+```lean
+import order.complete_lattice
+import order.directed
+
+def way_below {α : Type*} [preorder α] [complete_lattice α] (x y : α) : Prop :=
+  ∀ S : set α, directed_on (≤) S → y ≤ Sup S → ∃ s ∈ S, x ≤ s
+
+structure continuous_lattice (α : Type*) extends complete_lattice α :=
+(continuous : ∀ x : α, x = ⨆ (y : α) (h : way_below y x), y)
+
+notation x `<<` y := way_below x y
+```
+
+(Unfortunately, it does not understand `≪`, so we have to settle for `<<`.)
