@@ -97,3 +97,11 @@ So this needs to be replaced by
 structure continuous_dcpo (α : Type*) extends complete_lattice α :=
 (continuous : ∀ x : α, x = ⨆ (y : α) (h : way_below y x), y)
 ```
+
+and then this a continuous lattice, not a continuous dcpo (as currently defined), so let's write this as
+
+```lean
+structure continuous_lattice (α : Type*) extends complete_lattice α :=
+(continuous : ∀ x : α, x = ⨆ (y : α) (h : way_below y x), y)
+```
+
