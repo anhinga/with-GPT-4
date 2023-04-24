@@ -17,3 +17,7 @@ But it's really quite difficult to systematically learn this. I am trying to che
 A couple of weeks ago I asked the system to translate a simple lemma into Lean: [first-conversation.md](first-conversation.md)
 
 Let's continue and see how to define a continuous dcpo in Lean: [second-conversation.md](second-conversation.md)
+
+I ended up settling for continuous lattice for simplicity.
+
+Let's continue: [third-conversation.md](third-conversation.md)
