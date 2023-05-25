@@ -7,3 +7,5 @@ I have been sharing bits and pieces of my GPT-4 explorations here and there, but
 [Shadertoy](Shadertoy) - working with GPT-4 and shaders
 
 [Lean](Lean) - work related to Lean theorem prover
+
+[PaperUnderstanding](PaperUnderstanding) - help me to understand what a paper is about (Web browsing mode)
