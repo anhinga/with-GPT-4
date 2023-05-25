@@ -5,3 +5,7 @@ I've tried to use it with web browsing enabled to interpret a recent paper. On o
 
 At the same time, my second attempt (when I started from the `huggingface` copy of the paper in question), was "eventually successful"
 (I have yet to study whether the paper interpretation is good enough).
+
+[first-conversation.md](first-conversation.md) - failed attempt
+
+[second-conversation.md](second-conversation.md) - successful attempt
