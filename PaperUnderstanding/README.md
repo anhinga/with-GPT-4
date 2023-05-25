@@ -4,10 +4,12 @@ I've tried to use it with web browsing enabled to interpret a recent paper. On o
 (plenty of "click fails", and it seems that those click fails were not due to "robots" policies, but due to inability to parse).
 
 At the same time, my second attempt (when I started from the `huggingface` copy of the paper in question), was "eventually successful"
-(The question is whether the paper interpretation is good enough; my impression is that it speaks competently about the paper's abstract
-making it easier to understand compared to reading the abstract itself, but I doubt that it was able to read the PDF or the LaTeX source,
-so testing that capability is still on my to-do list).
+(GPT-4 speaks competently about the paper's abstract
+making it easier to understand compared to reading the abstract itself, but I don't think it was able to read the PDF or the LaTeX source,
+see [FurtherExploration](FurtherExploration) for details).
 
 [first-conversation.md](first-conversation.md) - failed attempt
 
 [second-conversation.md](second-conversation.md) - successful attempt
+
+[FurtherExploration](FurtherExploration) - further exploration of the GPT-4 web browsing mode and of RecurrentGPT paper
