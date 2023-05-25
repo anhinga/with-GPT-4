@@ -25,3 +25,7 @@ RecurrentGPT operates by generating a paragraph of text at each timestep and upd
 An interesting aspect of RecurrentGPT is its proposed usage as an interactive fiction that directly interacts with consumers, a concept the authors term as "AI As Contents" (AIAC). The authors believe AIAC to be the next form of conventional AI-generated content (AIGC). They also suggest the possibility of using RecurrentGPT to create personalized interactive fiction that directly interacts with readers instead of writers.
 
 In a broader context, RecurrentGPT exemplifies the usefulness of borrowing ideas from popular model designs in cognitive science and deep learning to enhance the capabilities of LLMs. The authors have made their code available for further exploration and also provide an online demo of RecurrentGPT [papers with code](https://paperswithcode.com/paper/recurrentgpt-interactive-generation-of).
+
+ME: Thanks!
+
+GPT-4: You're welcome! If you have any other questions or need further clarification, feel free to ask.
