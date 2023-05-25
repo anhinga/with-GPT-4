@@ -17,3 +17,14 @@ Overall, the README.md represents a snapshot of an ongoing exploration into the 
 ---
 
 I am going to try to put the PDF and/or the LaTeX of that RecurrentGPT paper on GitHub, and then we'll see how it goes.
+
+2) Try a PDF again:
+
+ME: Would you comment on https://github.com/anhinga/github-tests/blob/main/copy-of-RecurrentGPT-paper/2305.13304.pdf
+
+GPT-4: I'm sorry, but I'm unable to directly view or comment on the contents of the PDF file from the provided GitHub link because the GitHub interface doesn't allow for direct viewing of PDFs. However, you can download the PDF and summarize or quote a section for me to comment on. Alternatively, you can ask specific questions about the PDF's content, and I can provide responses based on my training knowledge cut-off in September 2021.
+
+---
+
+OK, I should use a website like GitHub pages instead, because the current version of Web browsing is underpowered and can't download
+
