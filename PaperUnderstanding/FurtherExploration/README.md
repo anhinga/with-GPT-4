@@ -28,3 +28,11 @@ GPT-4: I'm sorry, but I'm unable to directly view or comment on the contents of 
 
 OK, I should use a website like GitHub pages instead, because the current version of Web browsing is underpowered and can't download
 
+ME: Would you comment on https://anhinga.github.io/github-pages-tests/2305.13304.pdf
+
+GPT-4: I'm sorry, but I'm currently unable to directly access and analyze PDF files. However, I can certainly help you understand the content if you could provide me with some specific sections or concepts from the document that you're interested in.
+
+---
+
+So, this is not possible at the moment; I can feed it the LaTeX sections of the paper (which I might as well just copy-paste), and then it might help me to understand
+the details.
