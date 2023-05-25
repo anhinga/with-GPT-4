@@ -36,3 +36,7 @@ GPT-4: I'm sorry, but I'm currently unable to directly access and analyze PDF fi
 
 So, this is not possible at the moment; I can feed it the LaTeX sections of the paper (which I might as well just copy-paste), and then it might help me to understand
 the details.
+
+[Section2-RecurrentGPT.md](Section2-RecurrentGPT.md) - GPT-4 summarizes Section 2 of the paper for me.
+
+[2_RecurrentGPT.tex](2_RecurrentGPT.tex) - Section 2 LaTeX source is included for completeness (the comments in Section 2.2 include a methodological discussion which is helpful for understanding this material).
