@@ -1,0 +1,62 @@
+\section{\baby}
+
+We describe \baby in detail in this section. \baby is a natural language-based counterpart of the recurrence mechanism in RNNs. \baby simulates an LSTM by (1) modeling all vector-based components in an LSTM, including input vectors $x_t$, output vectors $y_t$, hidden states $h_t$, and cell states $c_t$, with natural language; (2) modeling the recurrent computation graph in an LSTM with natural language prompts, and (3) replacing the trainable parameters in RNNs by a frozen LLM. In theory, the backbone of \baby can be any LLM or text-to-text model, we opt for ChatGPT because of its capability and popularity.
+
+Formally, we define \baby as a computational function parametrized by an LLM with parameter $\theta$ and a prompt template $\mathcal{P}$. Recall that the recurrent computation graph of an LSTM can be summarized as:
+\begin{equation}
+    o_{t+1}, h_{t+1}, c_{t+1} = \textsc{LSTM}(x_{t+1}, h_{t}, c_{t}, \theta)
+\end{equation}
+where $\theta$ denotes the model parameters, $x_{t+1}$ equals to $o_{t}$, and $h_{t}, c_{t}$ are the long/short-term memories at timestep $t$, respectively. 
+
+By analogy, the recurrence mechanism in our model can be expressed by:
+\begin{equation}
+    o_{t+1}, x_{t+1}, h_{t+1}, c_{t+1} = \baby(o_{t}, x_{t}, h_{t}, c_{t}, \theta, \mathcal{P})
+\end{equation}
+where $o_{t}, x_{t}, h_{t},$ and $c_{t}$ denote the natural language-based building blocks including content, plan, short-term memory, and long-term memory, at time step $t$, respectively. Here $x_{t+1}$ does not equal $o_{t}$ and is instead separately generated, which is different from conventional RNNs.
+We first describe each building block in \baby and then present how our prompt $\mathcal{P}$ enables \baby to recurrently generate arbitrarily long texts.
+
+%\textcolor{red}{MS: I'd suggest describing the architecture mathematically At the moment, this paper writeup is written with a lot of jargons (and unfortunately, some high-level PR -- it does not seem like it is coming from a group of computer scientists). There is no objective clarity on what is the approach, what are the kind of plans considered, how they are modeled, how is the model interpretable (in what ways can a user interact with the system to create content -- what discrete text editing/writing operations we are considering), how is the training data created, etc. Also, can someone add todonotes comments?}
+
+
+\subsection{Language-based Building Blocks}
+
+\paragraph{Input/Output} The input and output of \baby at each timestep include a paragraph of text that gets appended to the final text produced and an outline for the next paragraph to be generated. We refer to these two as the ``content'' and ``plan'', respectively. As illustrated in Figure \ref{fig:main}, contents typically consist of 200-400 words and should be mostly ready for reading. Whereas plans are outlines for the next content and typically consist of 3-5 sentences. At each timestep, the content and plan generated in the previous timestep are used as input to \baby, allowing recurrent computation. \baby is designed to produce plans in addition to contents as allowing users to read and edit plans increases interpretability and facilitates human-computer interaction.
+
+\paragraph{Long-Short Term Memory} Similar to an LSTM, \baby maintains long-short term memory across timesteps. As illustrated in Figure \ref{fig:main}, long-term memory summarizes all previously generated contents to minimize information lost when generating long texts. Since the generated content can be arbitrarily long and cannot fit in the context size of LLMs, we implement the long-term memory in \baby with a VectorDB approach by embedding the content generated in each timestep with sentence-transformers~\citep{reimers-2019-sentence-bert}. This approach enables \baby to store even longer memory compared to previous memory-based Transformers~\citep{dai*2019transformerxl,bulatov2022recurrent} as it can store memory in disk space instead of GPU memory. This can be important in several use cases where the users may not have high-end GPUs in their devices.
+
+Short-term memory, on the other hand, is a short paragraph of texts summarizing key information across recent timesteps. The length of the short-term memory is controlled to 10-20 sentences so that it can fit into the prompt and can be updated by the LLM backbone. By combining long-short term memory, \baby can maintain coherence with recently generated content and also recall key information that was generated long before. This is impossible with vanilla LLMs because they can only take a few previously generated texts in the input.
+
+
+\baby can be initialized using a simple prompt that instructs the LLM to generate the aforementioned components with texts specifying the topic of the novel and other background information. When using \baby to continue writing a novel, users can write down (or prompt ChatGPT to generate) a short-term memory and an initial plan.
+
+
+\subsection{Language-based Recurrent Computation}
+While RNNs achieve recurrent computation by implementing a feedback loop in the computation graph, \baby relies on prompt engineering to simulate the recurrent computation scheme. As illustrated in Figure \ref{fig:main}, \baby simulates the computation graph in RNNs with a prompt template, which is presented in Figure 1 in the Appendix, and some simple Python code\footnote{We present the prompt in Appendix \ref{app:prompt} due to space constraints.}. 
+
+% \mrinmaya{Its not super clear what is the format of the short term memory and long term memory. I understand long term memory is basically indexed paragraphs. What is the short term memory? Continuous? A sample of short term sentences?}
+% \chunshu{As described in the previous subsection, short-term memory is a short paragraph of texts summarizing key information across recent timesteps.}
+% \mrinmaya{So it is generated! Again having an example in the appendix and citing it here will be helpful.}
+% \chunshu{Got it!}
+At each timestep, \baby constructs the input prompts by filling the prompt template with input content/plan and its internal long-short term memory. In particular, since the long-term memory cannot fit into the context size, we use the input plan as the query to perform a semantic search over the VectorDB-based long-term memory and fit a few most relevant contents into the prompt. The prompt then instructs the LLM backbone to generate new contents, plans, and updated short-term memory. As illustrated in Figure 1 in the Appendix, our prompt encourages the LLM to update the short-term memory by discarding information that is no longer relevant and adding useful new information while maintaining its length within a range so that it can always fit in the context size. 
+% \mrinmaya{Its not precise how the above is implemented. What do we mean by encourage the LLM to update short-term memory?}
+% \chunshu{This is implemented by designing corresponding prompts, shall we put our prompt in the main draft? I originally plan to put it in the Appendix since it takes much space.}
+% \mrinmaya{Its okay to have it in the appendix but we should cite it `everywhere' relevant so that the readers can have a look and understand via an example.}
+% After the LLM generates the outputs, we then parse the output with simple rules and update the components in \baby accordingly.
+% \mrinmaya{I see. Can we provide an example of what the input prompt is and what the expected output format is that enables this parsing?}
+% \chunshu{Okay! We'll add a figure about the prompt.}
+% \mrinmaya{This can be okay in the appendix and we can cite it here.}
+It is noteworthy that we prompt the LLM to generate multiple (e.g., 3 in our experiments) plans. This improves the diversity of outputs and makes human-computer interaction more friendly by allowing human users to select the most suitable plan. We also give users the option to write plans on their own if none of the generated plans is desirable. To make \baby capable of generating long texts autonomously without human intervention, we add a prompt-based human simulator to select a good plan and revise it for the next timestep.
+%\mrinmaya{Again what is the human simulator? Can we write this function? Is it just asking the LLM to select one the plans given context?} \chunshu{it is just asking the LLM to select one the plans given context}
+
+
+
+\subsection{Interactive Long Text Generation with \baby}
+
+While \baby can generate long texts on its own with the recurrence mechanism, its language-based computation scheme offers unique interpretability and interactivity. Compared to conventional computer-assisted writing systems that use language models as black boxes and only give next phrase/sentence suggestions, \baby enjoys the following advantages:
+\begin{itemize}
+    \item It is more efficient at reducing human labor because it makes paragraph/chapter-level progresses instead of local writing suggestions.
+    \item It is interpretable because users can directly observe its language-based internal states.
+    \item It is interactive because humans can edit their building blocks with natural language.
+    \item It is customizable because users can easily modify the prompts to customize the model according to their own interests (e.g., the style of output texts, how much progress to make for each timestep, etc.)
+\end{itemize}
+In addition, human interaction can also help correct accidental mistakes made by \baby when autonomously generating long texts and prevent error propagation, which is a major bottleneck for long text generation. 
