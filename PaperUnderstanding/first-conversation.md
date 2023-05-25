@@ -1,4 +1,4 @@
-The first conversation was not a success, but see the second one in this subdirectory.
+This conversation was not a success, but see the second conversation in this subdirectory.
 
 ME: Please comment on https://arxiv.org/abs/2305.13304
 
