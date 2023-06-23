@@ -3,6 +3,8 @@ single-instance and multi-instance modeling of dialogs
 in this example the conversation is between someone focusing on flexible self-modifiable neural machines (this is one of my focuses)
 and someone who knows quality-diversity (QD) algorithms well
 
+the purpose is to generate some insights, new understanding, or ideas for future work
+
 ---
 
 [single-instance-dialog-1.md](single-instance-dialog-1.md) - single-instance modeling (can be continued)
