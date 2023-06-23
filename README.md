@@ -9,3 +9,5 @@ I have been sharing bits and pieces of my GPT-4 explorations here and there, but
 [Lean](Lean) - work related to Lean theorem prover
 
 [PaperUnderstanding](PaperUnderstanding) - help me to understand what a paper is about (Web browsing mode)
+
+[modeling-dialog-between-scientists](modeling-dialog-between-scientists) - modeling a possible dialog between two scientists
