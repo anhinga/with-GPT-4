@@ -13,6 +13,8 @@ The fourth version does not result in changes.
 When I ask it to try again and to produce complete shaders, it interacts very nicely, holds context in a great fashion,
 but does not introduce any new creativity except for some mild variations in numbers.
 
+https://chat.openai.com/share/bdbf1bb5-9f66-4050-b62c-363f293d0858
+
 ME:
 
 I'd like to try to modify the following shader in various interesting ways:
