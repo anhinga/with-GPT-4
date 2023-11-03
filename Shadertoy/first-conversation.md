@@ -1,6 +1,8 @@
 Starting with my "Double warp" interactive shader: https://www.shadertoy.com/view/3tSGzV
 
-https://chat.openai.com/share/bdbf1bb5-9f66-4050-b62c-363f293d0858
+https://chat.openai.com/share/45d79079-cedc-4d66-a27d-4b0da3740bf1
+
+(this one is something else): https://chat.openai.com/share/bdbf1bb5-9f66-4050-b62c-363f293d0858
 
 ME:
 
