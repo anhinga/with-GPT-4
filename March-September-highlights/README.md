@@ -1,4 +1,4 @@
-# Highlights of my GPT-4 experiences: March-October 2023
+# Highlights of my GPT-4 experiences: March-September 2023
 
 GPT-4 has been introduced to the public on March 14:
 
