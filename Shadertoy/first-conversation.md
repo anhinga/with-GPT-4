@@ -1,5 +1,7 @@
 Starting with my "Double warp" interactive shader: https://www.shadertoy.com/view/3tSGzV
 
+https://chat.openai.com/share/bdbf1bb5-9f66-4050-b62c-363f293d0858
+
 ME:
 
 I'd like to try to modify the following shader in various interesting ways: float fract_sin_dot (vec2 uv) {
