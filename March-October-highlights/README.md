@@ -63,3 +63,33 @@ GPT-4: (reasons about the task, generates code and runs it to solve the problem)
 ME: "Thanks! This is quite awesome. This is a really large number. Imagine a human trying to solve this problem with access to a computer or a calculator, just with paper and pencil. How would such a human calculate an estimate of this number, say, the first 3 digits and the order of magnitude."
 
 GPT-4: (explains how to use logarithms for that, then generates code and runs it to obtain the result)
+
+---
+
+## Helping me to design immutable Python code for JAX autodiff
+
+https://github.com/anhinga/jax-pytree-example
+
+More specifically, `August-2023` and `September-2023` subdirectories.
+
+In https://github.com/anhinga/jax-pytree-example/tree/main/August-2023
+
+August 25: https://github.com/anhinga/jax-pytree-example/blob/main/August-2023/GPT-4/second-conversation.md
+
+https://github.com/anhinga/jax-pytree-example/blob/main/August-2023/GPT-4/extras/continue-second-conversation.md
+
+(and also https://github.com/anhinga/jax-pytree-example/blob/main/August-2023/GPT-4/extras/asking-about-tree-map.md)
+
+And I end up writing this code:
+
+https://github.com/anhinga/jax-pytree-example/blob/main/August-2023/immutable_ops.py
+
+And then (end of August-early September) this conversation for a more pedestrian difficulty:
+
+https://github.com/anhinga/jax-pytree-example/tree/main/September-2023
+
+https://github.com/anhinga/jax-pytree-example/blob/main/September-2023/GPT-4/first-conversation.md
+
+and also a conversation with GPT-4 referenced in the comments here:
+
+https://github.com/anhinga/jax-pytree-example/blob/main/September-2023/immutable_num_grad.py
