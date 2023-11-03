@@ -19,6 +19,8 @@ https://www.shadertoy.com/view/ddVSWV
 
 https://www.shadertoy.com/view/mdVSWV
 
+https://chat.openai.com/share/b762632e-cbf0-4c5a-a769-bcc09f285e67
+
 ME:
 
 I'd like to try to modify the following shader in various interesting ways:
