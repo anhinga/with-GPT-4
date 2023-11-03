@@ -7,6 +7,8 @@ but it does look like a genuine remix): https://www.shadertoy.com/view/DdyXWt
 
 So, I asked it to fix the (incorrectly perceived by me) lack of interativity and to fix the too much white, and it produced an awesome shader: https://www.shadertoy.com/view/cdySDt
 
+https://chat.openai.com/share/b34d5331-1658-405d-902b-ea3de9969a78
+
 ME:
 
 This site was having problems during the last hour. I am opening a new tab to see if you can talk...
