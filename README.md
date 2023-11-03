@@ -11,3 +11,5 @@ I have been sharing bits and pieces of my GPT-4 explorations here and there, but
 [PaperUnderstanding](PaperUnderstanding) - help me to understand what a paper is about (Web browsing mode)
 
 [modeling-dialog-between-scientists](modeling-dialog-between-scientists) - modeling a possible dialog between two scientists
+
+[March-September-highlights](March-September-highlights) - highlights of the first 6 months of my GPT-4 use
