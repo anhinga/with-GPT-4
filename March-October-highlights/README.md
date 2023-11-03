@@ -54,7 +54,7 @@ This mode (now called Advanced Data Analysis) allows the model to execute Python
 
 It is a big boost in capabilities (some people even suggested using GPT-4.5 name for this one).
 
-July 11: https://chat.openai.com/share/d1c4c289-9907-46a6-8ac1-f6baa34f1b12
+July 10: https://chat.openai.com/share/d1c4c289-9907-46a6-8ac1-f6baa34f1b12
 
 ME: "Someone is asking: What is the largest natural number that is the product of natural numbers that add up to 1976?"
 
