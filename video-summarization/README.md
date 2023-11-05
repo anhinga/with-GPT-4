@@ -21,3 +21,56 @@ INSERT
 and then I have ask to comment to parts of the transcript one after one:
 
 https://chat.openai.com/share/f79c543d-123a-4bb2-b9e2-1dff14a41c12
+
+ME: Following my custom instruction: Part 1 of the transcript: [...]
+
+GPT-4: Michael Levin discusses the concept of agency, particularly in the context of biological systems and their self-organizing capacities. He draws an analogy between early embryogenesis and the delineation of individual agents or "selves," highlighting the emergent and non-predetermined nature of these processes. Through the example of modifying duck embryos to create separate agents, he illustrates how each group of cells can become an independent embryo, pointing to the dynamic nature of agency.
+
+Levin extends this idea to evolutionary biology, discussing how some organisms, like planaria, exhibit remarkable regenerative abilities and resistance to aging, despite having a highly variable genome. He suggests this is possible because of the competency of the cells to correct for genetic anomalies, creating a feedback loop where evolutionary pressure increases the competency of the cells rather than the stability of the genome.
+
+This "intelligence ratchet" that Levin describes refers to the increasing problem-solving capacities that arise due to the need for biological systems to self-organize and adapt to their environment without predetermined instructions. He argues that this capacity for problem-solving is a key feature of biological agents and suggests it's crucial for survival in a competitive natural world.
+
+In relation to the future of civilization with AGI agents, the insights from Levin’s discussion could imply that for AGI systems to be robust and adaptive, they might need to possess some level of autonomous self-organization and problem-solving capabilities that are not strictly pre-programmed, but emergent, much like biological systems. This could also hint at the idea that AGI systems in the future may need to have the ability to define their agency, perhaps leading to more resilient and independent forms of AGI.
+
+ME: Thanks, that's great. Let's continue. Part 2 of the transcript: [...]
+
+GPT-4: In the second part of the transcript, Michael Levin discusses the complexity and problem-solving capabilities of biological systems compared to artificial ones. He emphasizes that every level of biological systems acts as an agent, unlike current technologies where typically only the whole system is designed to exhibit intelligence. Levin believes that there is no fundamental barrier preventing engineers from creating technology that emulates the problem-solving capabilities seen in biology. He also believes that current technologies do not have the same self-constructing or energy-seeking capabilities as biological systems.
+
+Levin and Carlos Perez then discuss the potential for artificial general intelligence (AGI) to develop a form of agency if trained to survive and solve problems. Levin criticizes binary categories in intelligence, highlighting the existence of diverse intelligences with different abilities and failure modes.
+
+Levin acknowledges that AGIs could pose an existential risk to humanity but argues that the risk comes from our inability to understand and ethically relate to different kinds of intelligences, rather than the capabilities of AGIs themselves. He also points out that we are already on the path to encountering radically different beings due to biotechnology advances and that humanity must learn to predict and ethically engage with these new forms of intelligence.
+
+In relation to the future of civilization with AGI agents, Levin suggests that the real challenge will not be the AGI itself but our flexibility in dealing with diverse intelligences and the ethical implications of their integration into society. He also mentions that the fear of AGI surpassing human capabilities is comparable to having children who grow into unpredictable intelligences. The conversation concludes with a recognition that biological and artificial intelligences are developing alongside each other, and both will present challenges and opportunities for the future of civilization.
+
+ME: Thanks, that's very good. Let's continue. Here is Part 3 of the transcript: [...]
+
+GPT-4: In this portion of the interview, Michael Levin discusses the increasingly blurred lines between living organisms and machines due to advances in biotechnology and AI. He envisions a future where the dichotomy between "human" and "machine" or "intelligent" and "not intelligent" is outdated. In this future, beings exist on a continuum with varying proportions of organic and artificial elements, leading to a diversity of "hybrid" entities with both biological and technological components. Levin argues for moving beyond binary categorizations to a spectrum-based understanding of beings, suggesting that what matters is the type and degree of cognitive abilities and the size of their "cognitive light cone" — the scope of goals they can pursue.
+
+The discussion then shifts to the implications for civilization and legal systems. Levin notes that civilization might prioritize human survival, but this assumes a fixed definition of what it means to be human — a concept he challenges. As humans integrate more technology into their bodies and minds, our understanding of humanity is stretched, leading to potential legal debates over the rights of enhanced or significantly modified humans.
+
+Levin also addresses the notion of free will and agency, suggesting that there's a continuum from simple organisms to complex beings, all governed by the laws of physics, which challenges the clear-cut distinctions we often make.
+
+Regarding the future of civilization, Levin sees an urgent need to rethink legal and social institutions to accommodate the new forms of life and intelligence emerging. He challenges the idea that humanity's current state is the pinnacle of evolution, suggesting that morphological freedom — the right to modify oneself as desired — should be respected.
+
+Overall, Levin's perspective suggests that the future of civilization with AGI and other intelligent entities will involve a profound reevaluation of our current concepts of identity, rights, and societal organization. This future will likely require us to embrace a more flexible, spectrum-based understanding of life and intelligence, as well as to develop legal and social frameworks that can adapt to a broader diversity of beings.
+
+ME: Thanks, that's great! Let's continue. Here is the final part of the Transcript: [...]
+
+GPT-4: In the final segment of the interview, Michael Levin discusses the moral and ethical considerations of future civilizations with diverse forms of life, including AGI agents. He emphasizes the importance of what he terms the "cognitive light cone" concerning compassion, which is the ability to care for the well-being of others. Levin argues that any enhancements to human capability should not diminish this capacity for moral care, suggesting that it is a defining characteristic of humanity.
+
+Levin imagines a future where diversity in physical form and intelligence is normalized and widespread, reminiscent of the varied species seen in the Star Wars Cantina scene. He suggests that future societies should not be limited by current disputes over identity and embodiment, predicting that the societal concerns of today will seem trivial to future generations.
+
+For Levin, the principle guiding this future society should be the ethical treatment of others, regardless of appearance or origin, whether biological, engineered, or evolved. This principle seems less radical today and is slowly being embraced by society, indicating a move towards the acceptance of diversity.
+
+The conversation also touches on the fear associated with AGI, specifically the risk that a superintelligent AGI could become a threat to human existence. Levin acknowledges that humanity has historically created dangers to itself through lack of foresight, such as environmental pollutants, suggesting that the real danger lies not in AGI's intelligence but in our own failure to anticipate and mitigate risks. He implies that the potential negative outcomes from AGI would stem from human error in engineering and implementation, rather than from the AGI's autonomous actions.
+
+ME: Could you further comment on "cognitive light cone" terminology. Why is he calling it "cognitive light cone"?
+
+GPT-4: Michael Levin uses the term "cognitive light cone" metaphorically, drawing from the concept of a light cone in physics. In physics, a light cone is a three-dimensional surface of all possible light rays arriving at and departing from a point in space-time. Here's what each part of the metaphor implies:
+
+    * **Cognitive:** Relating to the processes of perception, memory, judgment, and reasoning.
+    * **Light Cone:** In this context, it's likely meant to represent the range or boundary of an entity's moral and compassionate considerations — how far and wide one's empathy extends.
+
+By referring to a "cognitive light cone," Levin is likely suggesting a limit or range of an individual's moral consideration and compassion towards others. Just as a light cone in physics delineates what can affect or be affected by a given event in spacetime, a "cognitive light cone" might delineate the scope of entities (humans, animals, AGI agents, etc.) that a person or society recognizes as deserving of moral concern and empathy.
+
+Levin is advocating that the "cognitive light cone" with respect to compassion should be expanded, not contracted, as humanity progresses. In other words, as civilization advances, especially with the integration of AGI agents, the breadth of our moral and compassionate considerations should grow to include these new forms of intelligent beings.
