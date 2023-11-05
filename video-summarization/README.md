@@ -82,9 +82,8 @@ ME: Could you further comment on "cognitive light cone" terminology. Why is he c
 
 GPT-4: Michael Levin uses the term "cognitive light cone" metaphorically, drawing from the concept of a light cone in physics. In physics, a light cone is a three-dimensional surface of all possible light rays arriving at and departing from a point in space-time. Here's what each part of the metaphor implies:
 
-    * **Cognitive:** Relating to the processes of perception, memory, judgment, and reasoning.
-
-    * **Light Cone:** In this context, it's likely meant to represent the range or boundary of an entity's moral and compassionate considerations — how far and wide one's empathy extends.
+  * **Cognitive:** Relating to the processes of perception, memory, judgment, and reasoning.
+  * **Light Cone:** In this context, it's likely meant to represent the range or boundary of an entity's moral and compassionate considerations — how far and wide one's empathy extends.
 
 By referring to a "cognitive light cone," Levin is likely suggesting a limit or range of an individual's moral consideration and compassion towards others. Just as a light cone in physics delineates what can affect or be affected by a given event in spacetime, a "cognitive light cone" might delineate the scope of entities (humans, animals, AGI agents, etc.) that a person or society recognizes as deserving of moral concern and empathy.
 
