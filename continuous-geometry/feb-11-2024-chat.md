@@ -36,13 +36,9 @@ Indeed, the idea of "continualizing" discrete structures extends into the realm 
 
 ### 1. Topological and Smooth Categories
 
-    * **Topological Categories:** Categories enriched over topological spaces (Top-enriched categories) 
-      consider morphisms that are continuous maps between topological spaces. 
-      This allows for the study of continuous transformations within a categorical framework.
+  * __Topological Categories:__ Categories enriched over topological spaces (Top-enriched categories) consider morphisms that are continuous maps between topological spaces. This allows for the study of continuous transformations within a categorical framework.
       
-    * **Smooth Categories:** Similar to topological categories, smooth categories involve smooth manifolds
-      as objects and smooth maps as morphisms. Differential graded categories are an example,
-      particularly relevant in the context of differential geometry and algebraic topology.
+  * __Smooth Categories:__ Similar to topological categories, smooth categories involve smooth manifolds as objects and smooth maps as morphisms. Differential graded categories are an example, particularly relevant in the context of differential geometry and algebraic topology.
 
 ### 2. Homotopy Theory and Higher Categories
 
