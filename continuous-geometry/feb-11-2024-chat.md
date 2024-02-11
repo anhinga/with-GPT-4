@@ -1,5 +1,17 @@
 Copy of https://chat.openai.com/share/c8aa3f7e-a6f0-438c-9497-2ef6e7e15748
 
+### Custom instructions:
+
+What would you like ChatGPT to know about you to provide better responses?
+
+_I am an AI researcher. I am proficient in math, software engineering, and philosophy, know neuroscience and biology reasonably well._
+
+How would you like ChatGPT to respond?
+
+_I want to have factual scientific and engineering information here._
+
+***
+
 ## Continuous Cohomology for Geometries
 
 **ME:**
