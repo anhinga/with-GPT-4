@@ -23,3 +23,11 @@
      this is exactly the case we are dealing with
 
        * See, for example, Chapter 6 of https://arxiv.org/abs/1512.03868
+
+### additional remarks (Apr 15, 2024)
+
+  * There might be more than one way to build a theory of continuously indexed cohomologies on continuous geometries
+
+     * It might be of interest to compare various ways
+   
+     * It might be very interesting to compare continuously indexed coholomologies with traditional ones (indexed by integers) on the same spaces with continuous geometry
