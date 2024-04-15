@@ -12,4 +12,6 @@ I have been sharing bits and pieces of my GPT-4 explorations here and there, but
 
 [modeling-dialog-between-scientists](modeling-dialog-between-scientists) - modeling a possible dialog between two scientists
 
-[March-September-highlights](March-September-highlights) - highlights of the first 6 months of my GPT-4 use
+[March-September-highlights](March-September-highlights) - **highlights of the first 6 months of my GPT-4 use**, Mar-Sep 2023
+
+[continuous-geometry](continuous-geometry) - an exploration related to continuous geometry (introduced by von Neumann)
