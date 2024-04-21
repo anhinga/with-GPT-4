@@ -15,3 +15,7 @@ I have been sharing bits and pieces of my GPT-4 explorations here and there, but
 [March-September-highlights](March-September-highlights) - **highlights of the first 6 months of my GPT-4 use**, Mar-Sep 2023
 
 [continuous-geometry](continuous-geometry) - an exploration related to continuous geometry (introduced by von Neumann)
+
+---
+
+[Llama-3-comparison](Llama-3-comparison) - checking whether Llama 3 is competitive with early GPT-4
