@@ -8,3 +8,4 @@ Preliminary evaluations at https://chat.lmsys.org/?leaderboard indicate that Lla
 The crucial question is whether it's also competitive with early GPT-4 in "hard skills" like software engineering. This subdirectory
 is to evaluate that a bit.
 
+[custom-syntax.md](custom-syntax.md) - first success
