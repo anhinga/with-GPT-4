@@ -53,4 +53,4 @@ This function would then handle adding these connections to some matrix or data 
 
 ---
 
-GPT-3.5 also does fine, just like Meta AI model.
+GPT-3.5 also does fine, just like Meta AI model. It's a Nov 2023 version with 16K context, and it is not listed on Chatbot Arena leaderboard (unlike its predecessors).
