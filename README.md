@@ -16,6 +16,8 @@ I have been sharing bits and pieces of my GPT-4 explorations here and there, but
 
 [continuous-geometry](continuous-geometry) - an exploration related to continuous geometry (introduced by von Neumann)
 
+[monads-in-cs](monads-in-cs) - monads in computer science
+
 ---
 
 [Llama-3-comparison](Llama-3-comparison) - checking whether Llama 3 is competitive with early GPT-4
