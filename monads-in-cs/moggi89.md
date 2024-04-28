@@ -27,9 +27,11 @@ In traditional approaches to semantics (denotational semantics), programs are of
 In this paper, the alternative used is the notion of a **monad** and **morphisms in a Kleisli category**, which naturally extends to include computations. Each program is represented by a morphism from an object representing the type of inputs to an object representing the type of computations over outputs. This method allows for:
 
     * __Embedding additional computational context:__ 
-      through the monad's structure, which can manipulate how functions combine and how values are transformed into computations.
+      through the monad's structure, which can manipulate 
+      how functions combine and how values are transformed into computations.
 
     * **Generalization across different computational models:** 
-      by changing the definition of the monad, one can adapt the categorical semantics to different kinds of computational effects and behaviors.
+      by changing the definition of the monad, one can adapt 
+      the categorical semantics to different kinds of computational effects and behaviors.
 
 Overall, this approach provides a more robust and versatile framework for reasoning about program equivalence, one that can accommodate the complexity of various computational phenomena which traditional total functions cannot.
