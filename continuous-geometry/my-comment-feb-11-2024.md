@@ -31,3 +31,28 @@
      * It might be of interest to compare various ways
    
      * It might be very interesting to compare continuously indexed coholomologies with traditional ones (indexed by integers) on the same spaces with continuous geometry
+
+### additional remarks (May 2, 2024)
+
+  * Both upward and downward Scott continuity are present: https://en.wikipedia.org/wiki/Continuous_geometry
+
+     * So the situation might indeed be connected to _partial inconsistency landscape_, where two opposite Scott topologies are typical.
+   
+     * See, for example, Section 4 of "Linear Models of Computation and Program Learning", https://easychair.org/publications/paper/Q4lW
+   
+  * If this is a situation within _partial inconsistency landscape_, it would be of interest if cohomologies were related to logic.
+
+     * Indeed, Google search for [cohomology and logic](https://www.google.com/search?q=cohomology+and+logic) produces a lot of interesting results and tidbits, including        
+      
+       * https://math.stackexchange.com/questions/1085946/when-should-i-be-doing-cohomology
+      
+          * 'Generally the intuition behind cohomology groups is that they measure the failure of "locally consistent" things to be "globally consistent".' 
+      
+       * "Contextuality, Cohomology and Paradox", https://logic.berkeley.edu/colloquium/AbramskySlides.pdf
+      
+          * "data which is locally consistent, but globally inconsistent"
+        
+       * etc.
+      
+     * So, indeed, not only cohomology can be related to logic, but it is related to _limited and measured inconsistency_, which is
+       indeed a situation typical for a _partial inconsistency landscape_ setup.
