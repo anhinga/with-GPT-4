@@ -52,6 +52,8 @@
       
           * "data which is locally consistent, but globally inconsistent"
         
+          * Ambramsky recommends using sheaf cohomology (at least for quantum theory-relevant applications)
+        
        * etc.
       
      * So, indeed, not only cohomology can be related to logic, but it is related to _limited and measured inconsistency_, which is
