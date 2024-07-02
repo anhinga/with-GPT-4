@@ -10,14 +10,14 @@ GPT-4 correctly figures out that I am using nested dictionaries representing vec
 
 *****
 
-But this has been very difficult to reproduce, no versions of LLMs has been giving the results of comparable quality since.
+But this has been very difficult to reproduce, no versions of LLMs have been giving the results of comparable quality with this code analysis since.
 
 Now, with Claude 3.5 Sonnet, uploading the code by copy-paste (paste resulting in creating an attachment in their interface),
 and then asking:
 
 `Hi, please analyze the Julia program I just attached.`
 
-The reply is interesting:
+The reply is very interesting:
 
 *****
 
@@ -79,4 +79,6 @@ Would you like me to elaborate on any specific part of this program?
 Not bad at all. Reasonably competitive with the first brilliant experience with GPT-4 (perhaps a bit less crisp about
 noticing that nested dictionaries represent vector-like objects here, but it did understand the basics of that,
 and it did notice **The system is self-modifying, as the matrix that defines the connections is itself part of the computation**,
-so in this aspect it performed better than that first great G{T-4 experience).
+so in this aspect it performed better than that first great GPT-4 experience).
+
+So, great, those initial glimpses of high brilliance for very non-standard code analysis tasks are here again!
