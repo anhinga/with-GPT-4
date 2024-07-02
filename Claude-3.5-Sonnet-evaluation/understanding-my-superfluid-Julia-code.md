@@ -19,7 +19,7 @@ and then asking:
 
 The reply is interesting:
 
-*****
+***
 
 Certainly, I'll analyze the Julia program you've provided. This program appears to implement a "superfluid dataflow matrix machines engine." Let's break it down into its main components:
 
@@ -74,3 +74,9 @@ This program appears to be an implementation of a highly flexible and self-modif
 
 Would you like me to elaborate on any specific part of this program?
 
+***
+
+Not bad at all. Reasonably competitive with the first brilliant experience with GPT-4 (perhaps a bit less crisp about
+noticing that nested dictionaries represent vector-like objects here, but it did understand the basics of that,
+and it did notice **The system is self-modifying, as the matrix that defines the connections is itself part of the computation**,
+so in this aspect it performed better than that first great G{T-4 experience).
