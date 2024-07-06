@@ -1,6 +1,6 @@
 There have been this brilliant result with GPT-4 in March 2023 on the first try:
 
-March 25: GPT-4 demonstrates remarkable ability to understand uncommented and rather non-standard computer code (200+ lines in Julia):
+March 25, 2023: GPT-4 demonstrates remarkable ability to understand uncommented and rather non-standard computer code (200+ lines in Julia):
 
 https://github.com/anhinga/late-2022-julia-drafts/tree/main/dmm-port-from-clojure/GPT-4-conversations
 
@@ -12,7 +12,7 @@ GPT-4 correctly figures out that I am using nested dictionaries representing vec
 
 But this has been very difficult to reproduce, no versions of LLMs have been giving the results of comparable quality with this code analysis since.
 
-Now, with Claude 3.5 Sonnet, uploading the code by copy-paste (paste resulting in creating an attachment in their interface),
+July 2, 2024: Now, with Claude 3.5 Sonnet, uploading the code by copy-paste (paste resulting in creating an attachment in their interface),
 and then asking:
 
 `Hi, please analyze the Julia program I just attached.`
