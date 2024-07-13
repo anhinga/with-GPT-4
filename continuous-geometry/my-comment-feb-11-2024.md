@@ -53,6 +53,8 @@
           * "data which is locally consistent, but globally inconsistent"
         
           * Ambramsky recommends using sheaf cohomology (at least for quantum theory-relevant applications)
+    
+          * https://arxiv.org/abs/1502.03097 (150 citations)
         
        * etc.
       
