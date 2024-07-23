@@ -9,3 +9,7 @@ The crucial question is whether it's also competitive with early GPT-4 in "hard 
 is to evaluate that a bit.
 
 [custom-syntax.md](custom-syntax.md) - first success
+
+**Jul 23, 2024:** Llama 3.1 405B has been released today.
+
+[Llama-3.1-405B-understanding-my-superfluid-Julia-code.md](Llama-3.1-405B-understanding-my-superfluid-Julia-code.md) - within reason
