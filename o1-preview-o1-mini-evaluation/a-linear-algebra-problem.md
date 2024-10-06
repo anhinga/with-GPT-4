@@ -19,39 +19,34 @@ But yes, the answer it gives seems to be correct.
 
 Consider
 
+```
 P =
-
 array([[ 1, 1, 1, 1],
-
 [ 1, 2, 3, 4],
-
 [ 1, 3, 6, 10],
-
 [ 1, 4, 10, 20]])
+```
 
 and
 
+```
 A =
-
 array([[0, 1, 0, 0],
-
 [0, 0, 0, 0],
-
 [0, 0, 0, 1],
-
 [0, 0, 0, 0]])
+```
 
-it says that the answer is P-inverted multiplied by A multiplied by P
+it says that the answer is `P-inverted` multiplied by `A` multiplied by `P`
 
 Indeed if I compute that formula the resulting matrix is
 
+```
 array([[ 8., 24., 52., 96.],
-
 [ -17., -56., -128., -244.],
-
 [ 14., 48., 112., 216.],
-
 [ -4., -14., -33., -64.]])
+```
 
 and it satisfies the conditions.
 
