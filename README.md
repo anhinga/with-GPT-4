@@ -21,3 +21,7 @@ I have been sharing bits and pieces of my GPT-4 explorations here and there, but
 ---
 
 [Llama-3-comparison](Llama-3-comparison) - checking whether Llama 3 is competitive with early GPT-4
+
+[Claude-3.5-Sonnet-evaluation](Claude-3.5-Sonnet-evaluation) - same for the (original) Claude 3.5 Sonnet
+
+[o1-preview-o1-mini-evaluation](o1-preview-o1-mini-evaluation) - math capabilities of o1-preview are formidable
