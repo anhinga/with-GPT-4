@@ -7,7 +7,7 @@ https://chatgpt.com/share/67007c23-57cc-8010-8a17-4967455afdae
 
 (Generally speaking, asking the model to generate and run code immediately makes it much smarter.)
 
-**o1-mini:** thinks for a really long time (for over 2 minutes, the log of the summary of its internal thinking is really long), does tons of things with this, finally proposes a couple of answers, understands, that they are both incorrect, and makes a conjecture that a real-values matrix with these conditions might not exist, and asks me, whether I'd like to try to construct a complex-valued matrix with these properties:
+**o1-mini:** thinks for a really long time (for over 2 minutes, the log of the summary of its internal thinking is really long), does tons of things with this, finally proposes a couple of answers, understands that they are both incorrect, and makes a conjecture that a real-values matrix with these conditions might not exist, and asks me, whether I'd like to try to construct a complex-valued matrix with these properties:
 
 https://chatgpt.com/share/67007f0e-913c-8010-a93d-ad5744341c7a
 
